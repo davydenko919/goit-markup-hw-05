@@ -772,6 +772,8 @@ p{
   border-color: #4D5AE5;
 }
 
+
+
 .modal-form-field-icon{
   position: absolute;
   top: 50%;
@@ -780,7 +782,16 @@ p{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-form-input:focus .modal-form-field-icon{
+/* Отак не працює */
+/* .review-form-input:focus .modal-form-field-icon{
+  fill: #4D5AE5;
+} */
+
+.review-form-field-wrapper:hover .modal-form-field-icon {
+  fill: #4D5AE5;
+}
+
+.review-form-input:focus + .modal-form-field-icon {
   fill: #4D5AE5;
 }
 
@@ -799,6 +810,10 @@ p{
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: #4D5AE5;
   border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.text-area:focus{
+  border-color: #4D5AE5;
 }
 
 .review-form-checkbox-wrapper{
@@ -851,3 +866,27 @@ p{
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.review-form-own-checkbox{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  fill: transparent;
+}
+
+.modal-form-checkbox:checked
+  + .review-form-checkbox-label
+  > .review-form-own-checkbox {
+  background-color: var(--accent-color);
+  fill:#ffffff;
+}
+
+.modal-form-checkbox:focus
+  + .review-form-checkbox-label
+  > .review-form-own-checkbox {
+  outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.review-form-own-checkbox-icon{
+  fill: transparent;
+}
