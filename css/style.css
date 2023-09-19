@@ -782,10 +782,6 @@ p{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Отак не працює */
-/* .review-form-input:focus .modal-form-field-icon{
-  fill: #4D5AE5;
-} */
 
 .review-form-field-wrapper:hover .modal-form-field-icon {
   fill: #4D5AE5;
@@ -842,12 +838,6 @@ p{
   margin-right: 8px;
 }
 
-/* .checkbox-input:checked .checkbox-span{
-  background-color: #404bbf;
-  fill: #F4F4FD;
-  border: none;
-} */
-
 .review-form-privacy-link{
   color: #4d5ae5;
 }
@@ -868,32 +858,6 @@ p{
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .checkbox-span{
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  fill: transparent;
-  margin-right: 8px;
-} */
-
-/* .checkbox-input:checked
-  + .checkbox-label
-  > .checkbox-span {
-  background-color: var(--accent-color);
-  fill:#ffffff;
-} */
-
-/* .checkbox-input:focus
-  + .checkbox-label
-  > .checkbox-span {
-  outline: 2px solid rgba(0, 0, 255, 0.5);
-} */
-
-/* .checkbox-icon{
-  fill: transparent;
-} */
 
 input:checked + label > span {
   background-color: #404bbf;
