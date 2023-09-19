@@ -816,18 +816,18 @@ p{
   border-color: #4D5AE5;
 }
 
-.review-form-checkbox-wrapper{
+.checkbox-container{
   margin-bottom: 24px;
 }
 
-.review-form-checkbox-label{
+.checkbox-label{
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-.review-form-own-checkbox{
+.checkbox-span{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -839,7 +839,7 @@ p{
   fill: transparent;
 }
 
-.modal-form-checkbox:checked .review-form-own-checkbox{
+.checkbox-input:checked .checkbox-span{
   background-color: #404bbf;
   fill: #F4F4FD;
   border: none;
@@ -866,7 +866,7 @@ p{
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-form-own-checkbox{
+.checkbox-span{
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -874,19 +874,19 @@ p{
   fill: transparent;
 }
 
-.modal-form-checkbox:checked
-  + .review-form-checkbox-label
-  > .review-form-own-checkbox {
+.checkbox-input:checked
+  + .checkbox-label
+  > .checkbox-span {
   background-color: var(--accent-color);
   fill:#ffffff;
 }
 
-.modal-form-checkbox:focus
-  + .review-form-checkbox-label
-  > .review-form-own-checkbox {
+.checkbox-input:focus
+  + .checkbox-label
+  > .checkbox-span {
   outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
-.review-form-own-checkbox-icon{
+.checkbox-icon{
   fill: transparent;
 }
